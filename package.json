@@ -5,6 +5,15 @@
   "main": "index.js",
   "author": "Cheng Liu <liucheng.tech@outlook.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimochg/cow-price.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "price"
+  ],
+  "homepage": "https://github.com/kimochg/cow-price#readme",
   "scripts": {
     "build": "webpack",
     "build:prod": "webpack -p",
