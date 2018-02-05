@@ -1,6 +1,6 @@
 # Cow Price
 
-> a elegant way to calculation product price according to some rules
+> a elegant way to calculation product price according to some discount rules
 
 # Install
 
@@ -18,7 +18,7 @@ const discountRule = {
   category: 'percentage',
   condition: {
     perCount: 100,
-    perDiscount: 10,
+    perDiscount: 90,
     maxDiscount: 10,
   },
 }
@@ -34,7 +34,30 @@ console.log(actualPrice) // 190
 for now, two kinds of discount rule are supported
 
 1. 'flat': every `perCount` of the original price has a `perDiscount`, the max discount amount is `maxDiscount`
+
+```javascript
+{
+  category: 'flat',
+  condition: {
+    perCount: 100,
+    perDiscount: 10,
+    maxDiscount: 15,
+  },
+}
+```
+
 2. 'percentage': original price has a percentage `perDiscount` discount when price is over the `perCount`, the max discount amount is `maxDiscount`
+
+```javascript
+{
+  category: 'percentage',
+  condition: {
+    perCount: 100,
+    perDiscount: 90,
+    maxDiscount: 100,
+  },
+}
+```
 
 # Dev in local
 
