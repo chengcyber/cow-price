@@ -1,0 +1,20 @@
+{
+  "name": "cow-price",
+  "version": "1.0.0",
+  "description": "elegant way to calculate price according to rules",
+  "main": "index.js",
+  "author": "Cheng Liu <liucheng.tech@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "build:prod": "webpack -p",
+    "watch": "webpack --watch",
+    "test": "node ./__test__"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.10.0"
+  }
+}
